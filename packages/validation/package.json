@@ -1,0 +1,12 @@
+{
+  "name": "@bun-issue/validation",
+  "type": "module",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5",
+    "zod": "^4.1.12"
+  }
+}

@@ -1,0 +1,58 @@
+# Dependencies
+node_modules
+npm-debug.log
+bun.lockb
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDEs
+.vscode
+.idea
+.editorconfig
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+dist
+build
+.turbo
+.next
+coverage
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation & Config
+*.md
+LICENSE
+Makefile
+helm-charts
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Apps and Packages build outputs
+apps/*/dist
+apps/*/build
+apps/*/.next
+packages/*/dist
+packages/*/build
+
+# Web specific
+apps/web/node_modules
+apps/web/.vite
+
+# RestAPI specific
+apps/restapi/node_modules

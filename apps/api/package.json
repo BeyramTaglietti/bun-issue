@@ -1,0 +1,18 @@
+{
+  "name": "@bun-issue/api",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch run index.ts",
+    "build": "bun build index.ts"
+  },
+  "dependencies": {
+    "@bun-issue/validation": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
