@@ -1,11 +1,6 @@
-import { createSchema } from "@bun-issue/validation";
-
-const data = {
-  name: "John Doe",
-  email: "john.doe@example.com",
-  password: "password",
-};
-
-const validatedData = createSchema.parse(data);
-
-console.log(validatedData);
+Bun.serve({
+  port: 3000,
+  fetch: (req) => {
+    return new Response("Hello, World!");
+  },
+});

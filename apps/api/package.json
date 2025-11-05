@@ -3,8 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun --watch run index.ts",
-    "build": "bun build index.ts"
+    "dev": "bun run --hot index.ts",
+    "build": "bun build index.ts --outdir ./dist --target bun",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@bun-issue/validation": "workspace:*"
