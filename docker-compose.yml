@@ -19,7 +19,7 @@ services:
     restart: "no"
 #   caddy:
 #     image: caddy:2.7-alpine
-#     container_name: nsp-rda-caddy
+#     container_name: bun-issue-caddy
 #     ports:
 #       - "5173:5173"
 #     volumes:

@@ -14,7 +14,7 @@ COPY --from=pruner /app/out/json/ .
 COPY --from=pruner /app/out/bun.lock ./bun.lock
 
 # Install dependencies - resolve conflicts in pruned lock file
-RUN bun install --ignore-scripts
+RUN bun install --frozen-lockfile --ignore-scripts
 
 # Stage 3: Builder
 FROM oven/bun:1.3.1 AS builder
